@@ -3,5 +3,5 @@ from esoftapi.models import Adress
 
 @admin.register(Adress)
 class AdressAdmin(admin.ModelAdmin):
-    list_display = ('cep', 'endereço', 'numero', 'complemento', 'bairro', 'cidade', 'estado')
+    list_display = ('cep', 'endereco', 'numero', 'complemento', 'bairro', 'cidade', 'estado')
 
