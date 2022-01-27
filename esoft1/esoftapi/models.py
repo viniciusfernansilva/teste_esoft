@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 
 class Adress(models.Model):
     cep = models.CharField(primary_key=True, max_length=8)
-    endereço = models.CharField(max_length=25)
+    endereco = models.CharField(max_length=25)
     numero = models.IntegerField()
     complemento = models.CharField(max_length=15)
     bairro = models.CharField(max_length=25)

@@ -37,7 +37,7 @@ def salvar_cadastro(request):
         user.save()
         endereco = Adress()
         endereco.cep = request.POST.get("cep").replace(".", "").replace("-","")
-        endereco.endereço = request.POST.get("endereco")
+        endereco.endereco = request.POST.get("endereco")
         endereco.numero = request.POST.get("numero")
         endereco.complemento = request.POST.get("complemento")
         endereco.bairro = request.POST.get("bairro")
